@@ -5,4 +5,5 @@ module.exports = defineConfig({
     supportFile: false,
   },
   fixturesFolder: false,
+  projectId: 'zmk8yv',
 })
