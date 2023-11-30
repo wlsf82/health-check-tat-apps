@@ -1,0 +1,17 @@
+name: Cypress health check tests TAT Apps
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # runs tests every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress tests
+        uses: cypress-io/github-action@v6
