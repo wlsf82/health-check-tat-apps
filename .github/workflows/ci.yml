@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-    # runs tests every day at midnight UTC
+    # runs twice a day at noon and midnight UTC
     - cron: '0 12,00 * * *'
   workflow_dispatch:
 jobs:
