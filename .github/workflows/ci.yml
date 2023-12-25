@@ -5,7 +5,7 @@ on:
       - main
   schedule:
     # runs twice a day (at noon and midnight - UTC)
-    - cron: '0 12,00 * * *'
+    - cron: '0 12,18,00,06 * * *'
   workflow_dispatch:
 jobs:
   tests:
